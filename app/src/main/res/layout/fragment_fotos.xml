@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.FotosFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- GridView помещен в NestedScrollView
+     https://stackoverflow.com/questions/39411738/collapsingtoolbarlayout-issue-with-gridview -->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+        <GridView
+            android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="0dp"
+            android:verticalSpacing="0dp"
+            android:stretchMode="columnWidth"
+            android:numColumns="@integer/numColumns"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <!-- app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        выкинрул это из GridView не знаю зачем надо-->
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:theme="@style/CircularProgress"
+        android:visibility="invisible"/>
+
+</FrameLayout>

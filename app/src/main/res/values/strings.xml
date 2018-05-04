@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string name="auth_dialog_message">Перейти к авторизации</string>
+    <string name="auth_dialog_positive_button">Да</string>
+    <string name="auth_dialog_negative_button">Нет</string>
+
+    <string name="hello_tape_fragment">Hello tape fragment</string>
+    <string name="hello_files_fragment">Hello files fragment</string>
+    <string name="hello_files_root_fragment">Hello test fragment</string>
+    <string name="hello_fotos_fragment">Hello fotos fragment</string>
+
+    <string name="tape_fragment_title">Лента</string>
+    <string name="files_fragment_title">Файлы</string>
+    <string name="files_root_fragment_title">Файлы (подложка)</string>
+    <string name="fotos_fragment_title">Фото</string>
+    <string name="test_fragment_title">Тест</string>
+
+    <string name="file_chooser_title">Открыть файл</string>
+    <string name="fotos_loaded">Лента обновлена</string>
+
+    <string name="dir_label">Папка</string>
+    <string name="dir_empty_label">Папка пуста</string>
+
+</resources>
