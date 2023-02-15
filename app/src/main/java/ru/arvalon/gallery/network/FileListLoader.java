@@ -8,9 +8,6 @@
 package ru.arvalon.gallery.network;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.content.AsyncTaskLoader;
 import android.util.Log;
 
 import com.yandex.disk.rest.Credentials;
@@ -30,6 +27,10 @@ import java.util.List;
 import ru.arvalon.gallery.model.ListItem;
 
 import static ru.arvalon.gallery.HostActivity.TAG;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.loader.content.AsyncTaskLoader;
 
 /** загрузчик списка файлов данной папки, без порционного возврата данных. Из оригинального
  * загрузчика так же взята сортировка */

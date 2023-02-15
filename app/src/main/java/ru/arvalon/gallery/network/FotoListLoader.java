@@ -1,9 +1,6 @@
 package ru.arvalon.gallery.network;
 
 import android.content.Context;
-import android.os.SystemClock;
-import android.support.annotation.Nullable;
-import android.support.v4.content.AsyncTaskLoader;
 import android.util.Log;
 
 import com.yandex.disk.rest.Credentials;
@@ -20,6 +17,8 @@ import java.util.List;
 import ru.arvalon.gallery.model.ListItem;
 
 import static ru.arvalon.gallery.HostActivity.TAG;
+
+import androidx.loader.content.AsyncTaskLoader;
 
 public class FotoListLoader extends AsyncTaskLoader<List<ListItem>> {
 

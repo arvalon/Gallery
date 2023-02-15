@@ -2,8 +2,6 @@ package ru.arvalon.gallery.adapters;
 
 import android.content.Context;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +29,9 @@ import ru.arvalon.gallery.model.FotoViewHolder;
 import ru.arvalon.gallery.model.ListItem;
 
 import static ru.arvalon.gallery.authorization.LoginActivity.TAG;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 /** адаптер для заполнения GridView с фотографиями во вкладке Фото */
 public class FotoListAdapter extends ArrayAdapter<ListItem> {
