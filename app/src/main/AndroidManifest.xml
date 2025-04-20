@@ -14,7 +14,8 @@
         android:theme="@style/AppTheme"
         android:name=".system.App">
 
-        <activity android:name=".authorization.LoginActivity">
+        <activity android:name=".authorization.LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -35,7 +36,7 @@
         <activity android:name=".HostActivity" android:theme="@style/AppTheme.NoActionBar"/>
 
         <provider
-            android:name="android.support.v4.content.FileProvider"
+            android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true">

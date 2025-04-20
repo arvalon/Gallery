@@ -2,13 +2,10 @@ package ru.arvalon.gallery;
 
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 
+import com.google.android.material.tabs.TabLayout;
 import com.yandex.disk.rest.Credentials;
 
 import ru.arvalon.gallery.fragments.FilesRootFragment;
@@ -16,6 +13,10 @@ import ru.arvalon.gallery.fragments.FotosFragment;
 import ru.arvalon.gallery.adapters.ViewPagerAdapter;
 
 import static ru.arvalon.gallery.authorization.LoginActivity.*;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.viewpager.widget.ViewPager;
 
 /** основная активность со вкладками Фото и Файлы */
 public class HostActivity extends AppCompatActivity {
